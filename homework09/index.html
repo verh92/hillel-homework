@@ -10,18 +10,19 @@
 <body>
     <div class="calc__block">
         <input id="firstOperand" type="text" placeholder="insert the first operand">
-    <select id="selector" size="1" class="selector">
-        <option value="sum">+</option>
-        <option value="min">-</option>
-        <option value="mult">*</option>
-        <option value="div">/</option>
-    </select>
-    <input id="secondOperand" type="text" placeholder="insert the second operand">
-    <button id="btn">Calculate</button>
+        <select id="selector" size="1" class="selector">
+            <option value="sum">+</option>
+            <option value="min">-</option>
+            <option value="mult">*</option>
+            <option value="div">/</option>
+        </select>
+        <input id="secondOperand" type="text" placeholder="insert the second operand">
+        <button id="btn">Calculate</button>
     </div>
-    <div class="display">
-        <p id="text"></p>
-    </div>
+    <ul id="display"></ul>
+    <script type="text/template" id="template">
+        <span>{{template__text}}</span>
+    </script>
     <script src="assets/main.js"></script>
 </body>
 </html>

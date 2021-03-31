@@ -2,8 +2,8 @@ const first = document.getElementById('firstOperand');
 const second = document.getElementById('secondOperand');
 const selector = document.getElementById('selector');
 const button = document.getElementById('btn');
-const text = document.getElementById('text');
-const display = document.querySelector('display');
+const display = document.getElementById('display');
+const tempEl = document.getElementById('template').innerHTML;
 
 button.addEventListener('click', getRes);
 
@@ -33,7 +33,10 @@ function getRes() {
             result = '';
             break;
     };
-    text.innerHTML = `Congratulatuons this is your result ${result}`;
+
+    const newTempEl = document.createElement('li');
+    newTempEl.innerHTML = `${result}`;
+    display.append(newTempEl);
 }
 
 function sum(a, b) {
