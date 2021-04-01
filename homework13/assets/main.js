@@ -28,7 +28,7 @@ const TOPPINGS = {
     }
 };
 
-function ham(size) {
+function Ham(size) {
     this.size = size;
     this.price = 0;
     this.cal = 0;
@@ -50,7 +50,7 @@ function ham(size) {
     }
 }
 
-const hamburger = new ham(HAM_SIZE.medium);
+const hamburger = new Ham(HAM_SIZE.medium);
 
 hamburger.addTopping(TOPPINGS.chillie);
 hamburger.addTopping(TOPPINGS.salad);
