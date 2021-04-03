@@ -1,0 +1,13 @@
+.accordeon__title {
+    background-color: pink;
+}
+
+.accordeon__text {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+
