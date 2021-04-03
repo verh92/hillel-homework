@@ -10,6 +10,8 @@ Accordeon.prototype.init = function () {
 };
 
 Accordeon.prototype.onClick = function (e) {
+    if(!e.target.classList.contains('accordeon__title')) return;
+    
     if(e.target.nextElementSibling.classList.contains('active')) {
         e.target.nextElementSibling.classList.remove('active');
     }else {
