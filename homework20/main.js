@@ -5,5 +5,4 @@ function factFunc(n) {
     } return res;
 }
 
-
 console.log(factFunc(15));
